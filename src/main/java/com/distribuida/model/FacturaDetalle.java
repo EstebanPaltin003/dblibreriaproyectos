@@ -6,14 +6,16 @@ public class FacturaDetalle {
     private int idDetalle;
     private Libro libro;
     private int cantidad;
+    private int subtotal;
 
     // CONSTRUCTORES
     public FacturaDetalle() { }
 
-    public FacturaDetalle(int idDetalle, Libro libro, int cantidad) {
+    public FacturaDetalle(int idDetalle, Libro libro, int cantidad, int subtotal) {
         this.idDetalle = idDetalle;
         this.libro = libro;
         this.cantidad = cantidad;
+        this.subtotal = subtotal;
     }
 
     // GETTERS Y SETTERS

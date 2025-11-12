@@ -6,7 +6,7 @@ public class Factura {
 
     private int idFactura;
     private String numFactura;
-    private Date fecha;
+    private String fecha;
     private Double totalNeto;
     private Double iva;
     private Double total;
@@ -17,7 +17,7 @@ public class Factura {
 
     public Factura(){   }
             //METODO
-    public Factura(int idFactura, String numFactura, Date fecha, Double totalNeto, Double iva, Double total, Cliente cliente) {
+    public Factura(int idFactura, String numFactura, String fecha, Double totalNeto, Double iva, Double total, Cliente cliente) {
         this.idFactura = idFactura;
         this.numFactura = numFactura;
         this.fecha = fecha;
@@ -43,11 +43,11 @@ public class Factura {
         this.numFactura = numFactura;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
